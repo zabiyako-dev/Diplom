@@ -1,0 +1,2 @@
+# Diplom
+My diplomic work
