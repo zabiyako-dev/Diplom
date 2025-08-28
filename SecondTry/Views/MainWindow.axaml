@@ -1,0 +1,19 @@
+<Window
+    x:Class="SecondTry.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:SecondTry.Views"
+    xmlns:vm="using:SecondTry.ViewModels"
+    Title="Студия звукозаписи"
+    Width="410"
+    Height="470"
+    d:DesignHeight="470"
+    d:DesignWidth="410"
+    x:DataType="vm:MainViewModel"
+    Icon="/Assets/icons8-voice-recorder-100.png"
+    mc:Ignorable="d">
+    <views:MainView />
+
+</Window>

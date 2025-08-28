@@ -1,0 +1,8 @@
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\SecondTry.Desktop.pdb
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\av_libglesv2.dll
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\libHarfBuzzSharp.dll
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\Microsoft.Data.SqlClient.SNI.dll
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\libSkiaSharp.dll
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\e_sqlite3.dll
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\SecondTry.pdb
+H:\task_for_payment\SecondTry.Desktop\bin\Release\net8.0\win-x64\publish\SecondTry.Desktop.exe

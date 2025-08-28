@@ -1,0 +1,8 @@
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\SecondTry.Desktop.pdb
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\av_libglesv2.dll
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\libHarfBuzzSharp.dll
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\Microsoft.Data.SqlClient.SNI.dll
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\libSkiaSharp.dll
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\e_sqlite3.dll
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\SecondTry.pdb
+H:\Projects\SecondTry.Desktop\bin\Release\net8.0\publish\desctop\SecondTry.Desktop.exe

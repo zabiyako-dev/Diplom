@@ -1,0 +1,392 @@
+<UserControl
+    x:Class="SecondTry.Views.MainView"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Title="Автоматическая Информационная Система"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:SecondTry.ViewModels"
+    Width="410"
+    Height="470"
+    d:DesignHeight="470"
+    d:DesignWidth="410"
+    x:DataType="vm:MainViewModel"
+    mc:Ignorable="d">
+    <Design.DataContext>
+        <!--
+            This only sets the DataContext for the previewer in an IDE,
+            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
+        -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <UserControl.Resources>
+        <Color x:Key="SecondaryBeige">#FFEFD5</Color>
+        <!--  Вторичный бежевый  -->
+        <Color x:Key="AccentRuby">#D8301D</Color>
+        <!--  Рубиновый цвет  -->
+        <Color x:Key="LightBackground">#FFF5EE</Color>
+        <!--  Немного светлее фона  -->
+        <Color x:Key="BlackText">#000000</Color>
+        <!--  Черный цвет текста  -->
+    </UserControl.Resources>
+
+    <UserControl.Styles>
+        <!--  Шаблон кастомных полей ввода  -->
+        <Style Selector="TextBox:focus-within /template/ Border#PART_BorderElement">
+            <Setter Property="BorderBrush" Value="Orange" />
+        </Style>
+
+        <!--  Шаблон кнопок  -->
+        <Style Selector="Button">
+            <Setter Property="Foreground" Value="WhiteSmoke" />
+            <Setter Property="Background" Value="{StaticResource AccentRuby}" />
+            <Setter Property="BorderBrush" Value="#841C10" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="CornerRadius" Value="8" />
+
+            <!--  Стиль при наведении курсора  -->
+            <Style Selector="^:pointerover /template/ ContentPresenter">
+                <Setter Property="Foreground" Value="WhiteSmoke" />
+                <Setter Property="Background" Value="#841C10" />
+                <Setter Property="BorderBrush" Value="#841C10" />
+                <Setter Property="BorderThickness" Value="2" />
+            </Style>
+        </Style>
+
+
+    </UserControl.Styles>
+
+    <Border
+        Background="#FDEBD0"
+        BorderBrush="Gray"
+        BorderThickness="2"
+        BoxShadow="inset 0 2 6 2 Gray"
+        CornerRadius="8">
+
+        <!--  Главный grid  -->
+        <Grid x:Name="MainGrid">
+
+            <!--  Полупрозрачный фон  -->
+            <Border
+                x:Name="MainBackground"
+                Background="Wheat"
+                IsVisible="True"
+                Opacity="40"
+                ZIndex="1" />
+
+            <!--  Форма для авторизации  -->
+            <Border
+                x:Name="AutorizationForm"
+                Height="285"
+                Margin="14"
+                Background="WhiteSmoke"
+                BorderBrush="Gray"
+                BorderThickness="2"
+                CornerRadius="12"
+                IsVisible="True"
+                ZIndex="2">
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                    <TextBlock
+                        Grid.Row="0"
+                        Margin="12"
+                        HorizontalAlignment="Center"
+                        Text="Авторизуйтесь в системе" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Margin="24,12,0,0"
+                        Text="Введите логин:" />
+                    <TextBox
+                        x:Name="Login"
+                        Grid.Row="2"
+                        Margin="12"
+                        Watermark="Ваш логин (латинские символы)" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Margin="24,0,0,0"
+                        Text="Введите пароль:" />
+                    <TextBox
+                        x:Name="Password"
+                        Grid.Row="4"
+                        Margin="12"
+                        PasswordChar="*"
+                        Watermark="Ваш пароль: " />
+                    <Button
+                        Grid.Row="5"
+                        HorizontalAlignment="Center"
+                        Click="Autorization_Button_Click"
+                        Content="Войти в систему" />
+                    <TextBlock
+                        x:Name="AutorizationErrorText"
+                        Grid.Row="6"
+                        Margin="12"
+                        HorizontalAlignment="Center"
+                        Foreground="Red"
+                        IsVisible="False"
+                        Text="ОШИБКА! Неверный логин или пароль!" />
+                </Grid>
+            </Border>
+
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!--  Оглавление  -->
+                <Grid Grid.Row="0" ColumnDefinitions="*, 2*, *">
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="12,0,12,16"
+                        HorizontalAlignment="Center"
+                        FontSize="16"
+                        FontStyle="Italic"
+                        FontWeight="Medium"
+                        Text="Студия звукозаписи" />
+                    <Image
+                        Grid.Column="2"
+                        Width="40"
+                        Margin="-16,-12,12,0"
+                        HorizontalAlignment="Left"
+                        Source="/Assets/icons8-voice-recorder-100.png" />
+                </Grid>
+
+                <TextBlock
+                    Grid.Row="1"
+                    Margin="12,4,0,6"
+                    FontWeight="SemiBold"
+                    Text="Просмотр записей:" />
+
+                <!--  Для музыкантов  -->
+                <ComboBox
+                    x:Name="Musicians_ComboBox"
+                    Grid.Row="2"
+                    Margin="12,4,0,8"
+                    AutoScrollToSelectedItem="True"
+                    Background="{StaticResource LightBackground}"
+                    ItemsSource="{Binding Musicians}"
+                    MaxDropDownHeight="150"
+                    PlaceholderText="Выберите музыканта"
+                    SelectedItem="{Binding SelectedMusician, Mode=TwoWay}"
+                    SelectionChanged="Musicians_SelectionChanged">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Foreground="{StaticResource BlackText}" Text="{Binding FullName}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <!--  Для сессий  -->
+                <ComboBox
+                    x:Name="Session_ComboBox"
+                    Grid.Row="4"
+                    Margin="12,8,0,8"
+                    AutoScrollToSelectedItem="True"
+                    Background="{StaticResource LightBackground}"
+                    ItemsSource="{Binding RecordingSession}"
+                    MaxDropDownHeight="150"
+                    PlaceholderText="Выберите слот"
+                    SelectedItem="{Binding SelectedRecordingSession, Mode=TwoWay}"
+                    SelectionChanged="Session_SelectionChanged">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Foreground="{StaticResource BlackText}" Text="{Binding StartTime}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <!--  Информация о музыканте  -->
+                <Border
+                    Grid.Row="3"
+                    Width="380"
+                    Padding="10"
+                    HorizontalAlignment="Left"
+                    Background="{StaticResource LightBackground}"
+                    CornerRadius="8"
+                    IsVisible="True">
+                    <Grid ColumnDefinitions="Auto, Auto" RowDefinitions="Auto, Auto">
+                        <TextBlock
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="Имя:" />
+                        <TextBlock
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Margin="16,0,0,0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="{Binding SelectedMusician.FullName}" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="Инструмент:" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="16,0,0,0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="{Binding SelectedMusician.Instrument}" />
+                    </Grid>
+                </Border>
+
+                <!--  Информация о сессии  -->
+                <Border
+                    Grid.Row="5"
+                    Width="380"
+                    Padding="10"
+                    HorizontalAlignment="Left"
+                    Background="{StaticResource LightBackground}"
+                    CornerRadius="8"
+                    IsVisible="True">
+                    <Grid ColumnDefinitions="180, Auto" RowDefinitions="Auto, Auto, Auto, Auto">
+                        <TextBlock
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="Время начала:" />
+                        <TextBlock
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Foreground="{StaticResource BlackText}"
+                            Text="{Binding SelectedRecordingSession.StartTime}" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="Продолжительность:" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Foreground="{StaticResource BlackText}"
+                            Text="{Binding SelectedRecordingSession.Duration}" />
+                        <TextBlock
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="Студия:" />
+                        <TextBlock
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Foreground="{StaticResource BlackText}"
+                            Text="{Binding SelectedRecordingSession.StudioName}" />
+                        <TextBlock
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Foreground="{StaticResource BlackText}"
+                            Text="Стоимость часа аренды:" />
+                        <TextBlock
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Foreground="{StaticResource BlackText}"
+                            Text="{Binding SelectedRecordingSession.CostPerHour}" />
+                    </Grid>
+                </Border>
+
+                <!--  Общая стоимость услуги  -->
+                <Grid
+                    Grid.Row="6"
+                    Margin="12"
+                    ColumnDefinitions="Auto, Auto">
+                    <TextBlock Grid.Column="0" Text="Общая стоимость услуги: " />
+                    <TextBlock
+                        x:Name="CalculationResult"
+                        Grid.Column="1"
+                        Text="" />
+                </Grid>
+
+                <TextBlock
+                    Grid.Row="7"
+                    Margin="12"
+                    FontWeight="SemiBold"
+                    Text="Управление:" />
+
+                <Grid Grid.Row="8" ColumnDefinitions="*, *">
+                    <Button
+                        x:Name="baseInputButton"
+                        Grid.Column="0"
+                        HorizontalAlignment="Center"
+                        Content="Ввести запись">
+                        <!--  Всплывающее окно ввода данных в БД  -->
+                        <Button.Flyout>
+                            <Flyout Placement="TopEdgeAlignedLeft">
+                                <Border>
+                                    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                                        <TextBox
+                                            x:Name="FIO_textbox"
+                                            Grid.Row="0"
+                                            Margin="4"
+                                            Watermark="ФИО" />
+                                        <ComboBox
+                                            x:Name="Instrument_combobox"
+                                            Grid.Row="1"
+                                            Margin="4"
+                                            PlaceholderText="Инструмент">
+                                            <ComboBoxItem Content="гитара" />
+                                            <ComboBoxItem Content="пианино" />
+                                            <ComboBoxItem Content="укулеле" />
+                                        </ComboBox>
+                                        <TextBox
+                                            x:Name="StartTime_textbox"
+                                            Grid.Row="2"
+                                            Margin="4"
+                                            Watermark="Время начала" />
+                                        <TextBox
+                                            x:Name="Duration_textbox"
+                                            Grid.Row="3"
+                                            Margin="4"
+                                            Watermark="Продолжительность" />
+                                        <TextBox
+                                            x:Name="StudioName_textbox"
+                                            Grid.Row="4"
+                                            Margin="4"
+                                            Watermark="Название студии" />
+                                        <TextBox
+                                            x:Name="CostPerHour_textbox"
+                                            Grid.Row="5"
+                                            Margin="4"
+                                            Watermark="Стоимость в час" />
+                                        <TextBox
+                                            x:Name="MusicianId_textbox"
+                                            Grid.Row="6"
+                                            Margin="4"
+                                            Watermark="Айди музыканта" />
+                                        <Button
+                                            Grid.Row="7"
+                                            Margin="4"
+                                            Click="InsertButton_Click"
+                                            Content="Ввод значений" />
+                                        <TextBlock
+                                            x:Name="InputErrorText"
+                                            Grid.Row="8"
+                                            Margin="4"
+                                            Foreground="Red"
+                                            IsVisible="False"
+                                            Text="Заполните все поля" />
+                                    </Grid>
+                                </Border>
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
+
+                    <Button
+                        Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        Command="{Binding PrintDataToExcel}"
+                        Content="Сформировать отчёт" />
+                </Grid>
+
+
+            </Grid>
+        </Grid>
+    </Border>
+
+
+</UserControl>

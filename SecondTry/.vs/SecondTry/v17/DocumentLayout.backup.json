@@ -1,0 +1,163 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Projects\\SecondTry\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\model\\exports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:model\\exports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\views\\mainview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:views\\mainview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\migrations\\20250427102134_initmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:migrations\\20250427102134_initmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\model\\musician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:model\\musician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|h:\\projects\\secondtry\\model\\recordingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6326D01-84D4-4BB8-BAF0-6D24B9033DE4}|SecondTry.csproj|solutionrelative:model\\recordingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:09:35.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Musician.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Model\\Musician.cs",
+              "RelativeDocumentMoniker": "Model\\Musician.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\Model\\Musician.cs",
+              "RelativeToolTip": "Model\\Musician.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:08:42.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250427102134_InitMigration.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Migrations\\20250427102134_InitMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250427102134_InitMigration.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\Migrations\\20250427102134_InitMigration.cs",
+              "RelativeToolTip": "Migrations\\20250427102134_InitMigration.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:08:24.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainView.axaml",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Views\\MainView.axaml",
+              "RelativeDocumentMoniker": "Views\\MainView.axaml",
+              "ToolTip": "H:\\Projects\\SecondTry\\Views\\MainView.axaml",
+              "RelativeToolTip": "Views\\MainView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-28T19:06:46.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwEoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:06:17.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Model\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Model\\AppDbContext.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\Model\\AppDbContext.cs",
+              "RelativeToolTip": "Model\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:05:39.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Exports.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Model\\Exports.cs",
+              "RelativeDocumentMoniker": "Model\\Exports.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\Model\\Exports.cs",
+              "RelativeToolTip": "Model\\Exports.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:05:36.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RecordingSession.cs",
+              "DocumentMoniker": "H:\\Projects\\SecondTry\\Model\\RecordingSession.cs",
+              "RelativeDocumentMoniker": "Model\\RecordingSession.cs",
+              "ToolTip": "H:\\Projects\\SecondTry\\Model\\RecordingSession.cs",
+              "RelativeToolTip": "Model\\RecordingSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T19:05:32.631Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
